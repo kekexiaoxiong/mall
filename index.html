@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .after:after {
+        content: '\002';
+        display: block;
+        height: 0;
+        clear: both;
+    }
+    
+    a.pic_but {
+        display: block;
+        text-decoration: none;
+        height: 22px;
+        line-height: 22px;
+        background: url(./icon/button_bg.png);
+        padding: 0 10px;
+        margin-top: 8px;
+        color: #ebf0f3;
+        border: 1px solid #9FA3A8;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    
+    .l {
+        float: left !important;
+    }
+    
+    a:hover.pic_but,
+    a.hover.pic_but {
+        background: #727A85;
+        border-color: #596066;
+        box-shadow: 0 1px 3px #616A71 inset;
+        padding: 0 5px;
+    }
+    
+    a.pic_but.l {
+        margin: 8px 10px 0 0;
+    }
+    
+    a.pic_but {
+        height: 24px;
+        padding: 0 5px;
+    }
+    
+    font.pic_icon {
+        background: url(./icon/icon_pic_hover.png) no-repeat left center;
+    }
+    
+    a.pic_but font.pic_icon {
+        background: url(./icon/icon_pic.png) no-repeat left center;
+        width: 15px;
+        font-size: 52px;
+    }
+    
+    a.pic_but font {
+        height: 24px;
+        display: block;
+        text-indent: -9999em;
+    }
+    
+    a.pic_but.l {
+        margin: 8px 10px 0 0;
+    }
+    
+    a.pic_but font.table_icon {
+        background: url(./icon/icon_table.png) no-repeat left center;
+        width: 15px;
+    }
+    
+    a.pic_but {
+        height: 24px;
+        padding: 0 5px;
+    }
+    
+    a.pic_but font {
+        height: 24px;
+        display: block;
+        text-indent: -9999em;
+    }
+</style>
+
+<body>
+    <div class="after">
+        <a role="chartBtn" class="pic_but l hover">
+            <font class="pic_icon"></font>
+        </a>
+        <a role="tableBtn" class="pic_but l">
+            <font class="table_icon"></font>
+        </a>
+    </div>
+</body>
+
+</html>
